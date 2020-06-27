@@ -141,19 +141,9 @@ input[type=checkbox].sheet-checkbox-tab{
     outline: none;
     opacity: 0;
 }
-
-label.sheet-bla {
-    position: relative;
-    display: inline-block;
-    width: 110px;
-    font-size: 1.1em;
-    text-align: center;
-    height: 20px;
-    cursor: pointer;
-    padding-left: 10px;
-}
-
-label.sheet-bla::before  {
+label.sheet-bla::before,
+label.sheet-tab-optionnal1-bla::before,
+label.sheet-tab-optionnal2-bla::before  {
     position: absolute;
     top: 0;
     left: -0px;
@@ -164,7 +154,9 @@ label.sheet-bla::before  {
     content: "";
 }
 
-input[type=checkbox].sheet-checkbox-tab:checked  + label.sheet-bla::before {
+input[type=checkbox].sheet-checkbox-tab:checked  + label.sheet-bla::before::before,
+input[type=checkbox].sheet-checkbox-tab:checked  + label.sheet-tab-optionnal1-bla::before::before,
+input[type=checkbox].sheet-checkbox-tab:checked  + label.sheet-tab-optionnal2-bla::before::before {
     width: 15px;
     height: 15px;
     background-color: #e1a926;
@@ -681,6 +673,24 @@ div.sheet-tab-content, .sheet-tab-optionnal {
     display: none;
 }
 
+.sheet-bla,
+input.sheet-character_nephilim:checked~.sheet-tab-optionnal1-bla,
+input.sheet-character_selenim:checked~.sheet-tab-optionnal2-bla {
+	display: inlne-block;
+    position: relative;
+    width: 110px;
+    font-size: 1.1em;
+    text-align: center;
+    height: 20px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+input.sheet-character_nephilim:checked~.sheet-tab-optionnal1,
+input.sheet-character_selenim:checked~.sheet-tab-optionnal2,
+input.sheet-practice-mag:checked~.sheet-tab-optionnal4,
+input.sheet-practice-kabb:checked~.sheet-tab-optionnal5,
+input.sheet-practice-alch:checked~.sheet-tab-optionnal6,
 input.sheet-practice-mag:checked~.sheet-tab-optionnal4,
 input.sheet-practice-kabb:checked~.sheet-tab-optionnal5,
 input.sheet-practice-alch:checked~.sheet-tab-optionnal6  {
@@ -1054,7 +1064,7 @@ input[type=text].sheet-verylonginputtext{
 }
 
 .sheet-alch-construct-athanor{
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/construct-alambic.png");
+    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/construct-athanor.png");
 }
 
 .sheet-alch-construct-alambic{
