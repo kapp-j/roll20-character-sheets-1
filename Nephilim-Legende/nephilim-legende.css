@@ -2,7 +2,7 @@
 
 .charsheet {
     box-sizing: content-box;
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/background.jpg");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/background.jpg");
     background-size: cover;
     font-weight: bold;
     min-width: 1350px;
@@ -134,9 +134,7 @@ label.sheet-checkbox-label input[type=checkbox].sheet-checkbox-check:checked + .
 /* Checkbox tab */
 
 input[type=checkbox].sheet-checkbox-tab{
-    display: block;
     height: 0;
-    display: inline-block;
     border: none;
     outline: none;
     opacity: 0;
@@ -263,7 +261,7 @@ h1 {
 }
 
 .sheet-rolldice, .sheet-rollsword {
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/dices.png");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/dices.png");
     cursor: pointer;
     width: 40px;
     background-attachment: unset;
@@ -275,7 +273,7 @@ h1 {
 }
 
 .sheet-rollsword {
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/opposition.png");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/opposition.png");
 }
 
 button.sheet-rolldice:before, button.sheet-rollsword:before {
@@ -367,7 +365,14 @@ button.sheet-rolldice:before, button.sheet-rollsword:before {
 }
 
 .sheet-elements {
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/pentacle.png");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/pentacle.png");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.sheet-elements-selenim {
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/selenim.png");
     background-size: cover;
     width: 300px;
     height: 300px;
@@ -676,14 +681,16 @@ div.sheet-tab-content, .sheet-tab-optionnal {
 .sheet-bla,
 input.sheet-character_nephilim:checked~.sheet-tab-optionnal1-bla,
 input.sheet-character_selenim:checked~.sheet-tab-optionnal2-bla {
-	display: inlne-block;
+	display: inline-block;
     position: relative;
-    width: 110px;
+    width: 130px;
     font-size: 1.1em;
-    text-align: center;
+    text-align: left;
     height: 20px;
     cursor: pointer;
-    padding-left: 10px;
+    padding-left: 30px;
+	overflow: hidden;
+    white-space: nowrap;
 }
 
 input.sheet-character_nephilim:checked~.sheet-tab-optionnal1,
@@ -691,9 +698,8 @@ input.sheet-character_selenim:checked~.sheet-tab-optionnal2,
 input.sheet-practice-mag:checked~.sheet-tab-optionnal4,
 input.sheet-practice-kabb:checked~.sheet-tab-optionnal5,
 input.sheet-practice-alch:checked~.sheet-tab-optionnal6,
-input.sheet-practice-mag:checked~.sheet-tab-optionnal4,
-input.sheet-practice-kabb:checked~.sheet-tab-optionnal5,
-input.sheet-practice-alch:checked~.sheet-tab-optionnal6  {
+input.sheet-practice-necr:checked~.sheet-tab-optionnal7,
+input.sheet-practice-kabbN:checked~.sheet-tab-optionnal8 {
     display: inline;
 }
 
@@ -705,7 +711,11 @@ input.sheet-tab5:checked~div.sheet-tab5,
 input.sheet-tab6:checked~div.sheet-tab6,
 input.sheet-tab7:checked~div.sheet-tab7,
 input.sheet-tab8:checked~div.sheet-tab8,
-input.sheet-tab9:checked~div.sheet-tab9  {
+input.sheet-tab9:checked~div.sheet-tab9,
+input.sheet-tab10:checked~div.sheet-tab10,
+input.sheet-tab11:checked~div.sheet-tab11,
+input.sheet-tab12:checked~div.sheet-tab12,
+input.sheet-tab13:checked~div.sheet-tab13  {
     display: block;
 }
 
@@ -903,7 +913,7 @@ input[type=text].sheet-verylonginputtext{
 
 /* Kabbale arbre */
 .sheet-kabb-arbre {
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/kabbale.png");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/kabbale.png");
     width: 500px;
     height: 980px;
     margin: auto;
@@ -1029,23 +1039,23 @@ input[type=text].sheet-verylonginputtext{
 }
 
 .sheet-alch-mp-eau{
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/eau.png");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/eau.png");
 }
 
 .sheet-alch-mp-air{
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/air.png");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/air.png");
 }
 
 .sheet-alch-mp-feu{
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/feu.png");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/feu.png");
 }
 
 .sheet-alch-mp-terre{
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/terre.png");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/terre.png");
 }
 
 .sheet-alch-mp-lune{
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/lune.png");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/lune.png");
 }
 
 /* Alchimie constructs */
@@ -1064,23 +1074,23 @@ input[type=text].sheet-verylonginputtext{
 }
 
 .sheet-alch-construct-athanor{
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/construct-athanor.png");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/construct-athanor.png");
 }
 
 .sheet-alch-construct-alambic{
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/construct-alambic.png");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/construct-alambic.png");
 }
 
 .sheet-alch-construct-creuset{
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/construct-creuset.png");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/construct-creuset.png");
 }
 
 .sheet-alch-construct-aludel{
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/construct-aludel.png");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/construct-aludel.png");
 }
 
 .sheet-alch-construct-cornue{
-    background-image: url("https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/construct-cornue.png");
+    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/construct-cornue.png");
 }
 .sheet-alch-construct-spec{
     align-content: center;
