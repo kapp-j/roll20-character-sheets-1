@@ -191,17 +191,18 @@
             </div>
         </div>
 
-        <div class="sheet-box sheet-elements">
+        <div class="sheet-box sheet-elements-selenim">
             <div class="sheet-kalunenoire">
                 <input class="sheet-rond sheet-ka" type="number" name="attr_kalunenoire" />
-                <button type="roll" class="sheet-karoll" style="color:dark" name="karolllunenoire" value="&{template:ka} {{perso= @{character_name} }} {{nom_ka=Ka Lune Noire}} {{jet=[[ 1d100 ]] }}{{seuil=[[(?{Bonus / malus ?|0}[ Bonus, malus, vécus, etc. ]+@{kalunenoire}[ Ka Lune Noire ])*10 ]] }} ">Ka Lune Noire</button>
+                <button type="roll" class="sheet-karoll" style="color:white" name="karolllunenoire" value="&{template:ka} {{perso= @{character_name} }} {{nom_ka=Ka Lune Noire}} {{jet=[[ 1d100 ]] }}{{seuil=[[(?{Bonus / malus ?|0}[ Bonus, malus, vécus, etc. ]+@{kalunenoire}[ Ka Lune Noire ])*10 ]] }} ">KLN</button>
             </div>
 			
             <div class="sheet-reserve">
                 <input class="sheet-rond sheet-ka" type="number" name="attr_reserve" />
+                <button class="sheet-karoll" style="color:white" name="reservemax">Réserve Max</button>
             </div>
             
-            <div class="sheet-header"><img src="https://raw.githubusercontent.com/fennelin/roll20-character-sheets/master/Nephilim-Legende/images/selenim.png"/></div>
+            <div class="sheet-header"><img src="https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/nephilim.png"/></div>
         </div>
 
         <div class="sheet-box">
@@ -232,12 +233,26 @@
             </div>
 
             <div class="sheet-attrib sheet-main">
-                <h1>Pavane</h1>
-                <div class="sheet-stase">
+                <h1 style="display:inline-block">Pavane</h1>
+                <div class="sheet-pavane">
                     <input class="sheet-carre" name="attr_simu-attr_pavane_degre" type="number" />
                 </div>
             </div>
 
+            <div class="sheet-attrib sheet-main">
+                <h1 style="display:inline-block">Réserve courante</h1>
+                <div class="sheet-pavane">
+                    <input class="sheet-carre" name="attr_simu-attr_reserve_degre" type="number" />
+                </div>
+            </div>
+
+            <div class="sheet-attrib sheet-main">
+                <h1>Royaume</h1>
+                <div class="sheet-stase">
+                    <input type="text" name="attr_royaume_desc" class="sheet-name" title="Royaume"/>
+                </div>
+            </div>
+			
             <div class="sheet-attrib sheet-main">
                 <h1>Arcane</h1>
                 <div class="sheet-stase">

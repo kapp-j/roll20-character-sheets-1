@@ -252,6 +252,10 @@ h1 {
     margin: 0 1px;
 }
 
+.sheet-pavane{
+	display: inline-block;
+}
+
 .sheet-bigtext {
     font-size: 1.5em;
     color: black;
@@ -372,7 +376,7 @@ button.sheet-rolldice:before, button.sheet-rollsword:before {
 }
 
 .sheet-elements-selenim {
-    background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Nephilim-Legende/images/selenim.png");
+    background-image: url("https://raw.githubusercontent.com/kapp-j/roll20-character-sheets-1/feat-selenim/Nephilim-Legende/images/noyau.png");
     background-size: cover;
     width: 300px;
     height: 300px;
@@ -428,6 +432,27 @@ button.sheet-rolldice:before, button.sheet-rollsword:before {
 .sheet-katerre button {
     margin: -3px 0 0 -8px !important;
 }
+
+.sheet-kalunenoire {
+    width: 60px;
+    position: relative;
+    top: 58px;
+    left: 77px;
+}
+.sheet-kalunenoire button {
+    margin: -3px 0 0 5px !important;
+}
+
+.sheet-reserve {
+    width: 60px;
+    position: relative;
+    top: 134px;
+    left: 181px;
+}
+.sheet-reserve button {
+    margin: -3px 0 0 -8px !important;
+}
+
 .sheet-test {
     height: 30px;
     border-top: 1px solid #bc6d10;
